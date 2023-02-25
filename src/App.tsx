@@ -10,9 +10,9 @@ function App() {
           <h1 className='text-xl font-bold font-albertsans'>CydeOS</h1>
           <button data-tooltip-id='downloadbtnfail' data-tooltip-content='Cannot Download - Still in development' data-tooltip-place='bottom'>Download</button>
         </header>
-        <div>
+        <div className='flex justify-center items-center p-4 m-2 dark:bg-blue-400 bg-blue-200 rounded-md h-36	'>
           <h1>Lets Speed up your old phones. using <span>CydeOS</span></h1>
-
+          <p>CydeOS is a fast Operating System Using Android 10/11 Designed For Old Phones</p>
         </div>
       </div>
       <Tooltip
