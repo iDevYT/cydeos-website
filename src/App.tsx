@@ -10,6 +10,10 @@ function App() {
           <h1 className='text-xl font-bold font-albertsans'>CydeOS</h1>
           <button data-tooltip-id='downloadbtnfail' data-tooltip-content='Cannot Download - Still in development' data-tooltip-place='bottom'>Download</button>
         </header>
+        <div>
+          <h1>Lets Speed up your old phones. using <span>CydeOS</span></h1>
+
+        </div>
       </div>
       <Tooltip
          id='downloadbtnfail'/>
