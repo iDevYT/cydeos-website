@@ -35,13 +35,9 @@ function Home(){
         <div className='p-2'>
         <h1 className='text-3xl font-albertsans font-bold'>Features</h1>
         <div className='flex'>
+     
           <div>
-            <h2>Fast</h2>
-            <p>lorem ips</p>
-          </div>
-          <div>
-            <h2>Open</h2>
-            <p>lorem ips</p>
+
           </div>
         </div>
         </div>
