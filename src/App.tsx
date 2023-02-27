@@ -27,9 +27,22 @@ function App() {
 function Home(){
   return(
     <>
-        <div className='flex justify-center items-center p-4 m-2 dark:bg-zinc-600 bg-zinc-100 rounded-md h-80	flex-col'>
-          <h1 className='text-2xl font-albertsans font-bold'>Lets Speed up your old phones. using <span>CydeOS</span></h1>
-          <div className='flex justify-center p-'><p>CydeOS is a fast Operating System Using Android 10/11 Designed For Old Phones.</p> <a href="./compatibility">Check Compatibility Here</a></div>
+        <div className='flex justify-center items-center p-4 m-2 dark:bg-zinc-600 bg-zinc-100 rounded-md h-80	flex-col space-y-6'>
+          <h1 className='text-3xl font-albertsans font-bold mx-2'>Lets Speed up your old phones. using <span>CydeOS</span></h1>
+          <div className='flex justify-center p-'><p>CydeOS is a fast Operating System Using Android 10/11 Designed For Old Phones. <a href="./compatibility">Check Compatibility Here</a> </p></div>
+        </div>
+        <div className='p-2'>
+        <h1 className='text-3xl font-albertsans font-bold'>Features</h1>
+        <div className='flex'>
+          <div>
+            <h2>Fast</h2>
+            <p>lorem ips</p>
+          </div>
+          <div>
+            <h2>Open</h2>
+            <p>lorem ips</p>
+          </div>
+        </div>
         </div>
     </>
   )

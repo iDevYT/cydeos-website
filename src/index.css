@@ -18,8 +18,8 @@
   @apply h-[10vh] sticky bottom-0 py-1 w-screen flex text-xs justify-center;
 }
 
-form {
-
+a {
+  @apply hover:text-primaryBlue-primary transition-all
 }
 
 body {
@@ -42,9 +42,15 @@ main::-webkit-scrollbar-thumb {
 }
 
 button {
-  @apply dark:bg-zinc-700 bg-primaryBlue-primary text-white font-albertsans hover:bg-primaryBlue-50 dark:hover:bg-zinc-600 m-1 rounded-md p-3 rounded-md
+  @apply dark:bg-zinc-700 bg-primaryBlue-primary text-white font-albertsans hover:bg-primaryBlue-50 dark:hover:bg-zinc-600 m-1 rounded-md p-3 transition-all duration-200
 }
 
 .sign-out {
   @apply p-3 rounded-md
+}
+h1 {
+  @apply text-3xl font-albertsans font-bold
+}
+h2 {
+  @apply text-2xl font-albertsans font-bold mx-2
 }
