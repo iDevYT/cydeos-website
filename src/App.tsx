@@ -25,6 +25,7 @@ function App() {
 }
 
 function Home(){
+  // TODO: Make the "Features" cards seperate components.
   return(
     <>
         <div className='flex justify-center items-center p-4 m-2 dark:bg-zinc-600 bg-zinc-100 rounded-md h-80	flex-col space-y-6'>
