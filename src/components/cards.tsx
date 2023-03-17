@@ -9,10 +9,10 @@ interface CardProps {
 
 function FeatureCard ({title, text}: CardProps) {
     return (
-        <>
+        <div className='flex flex-col justify-center items-center'>
         <h2>{title}</h2>
         <p>{text}</p>
-        </>
+        </div>
     )
 }
 

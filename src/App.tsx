@@ -2,6 +2,8 @@ import React from 'react';
 import { Tooltip } from "react-tooltip";
 import 'react-tooltip/dist/react-tooltip.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FeatureCard } from "./components/cards";
+import { ComputerDesktopIcon, CheckBadgeIcon, DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
 function App() {
   return (
     <>
@@ -12,8 +14,8 @@ function App() {
         </header>
       </div>
       <Tooltip
-         id='downloadbtnfail'/>
-               <BrowserRouter>
+        id='downloadbtnfail' />
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/compatibility" element={<Compat />} />
@@ -24,39 +26,46 @@ function App() {
   );
 }
 
-function Home(){
-  // TODO: Make the "Features" cards seperate components in seperate files.
-  return(
+function Home() {
+  return (
     <>
-        <div className='flex justify-center items-center p-4 m-2 dark:bg-zinc-600 bg-zinc-100 rounded-md h-80	flex-col space-y-6'>
-          <h1 className='text-3xl font-albertsans font-bold mx-2'>Lets Speed up your old phones. using <span>CydeOS</span></h1>
-          <div className='flex justify-center p-'><p>CydeOS is a fast Operating System Using Android 10/11 Designed For Old Phones. <a href="./compatibility">Check Compatibility Here</a> </p></div>
-        </div>
-        <div className='p-2'>
+      <div className='flex justify-center items-center p-4 m-2 dark:bg-zinc-600 bg-zinc-100 rounded-md h-80	flex-col space-y-6 shadow-2xl'>
+        <h1 className='text-3xl font-albertsans font-bold mx-2'>Lets Speed up your old phones. using <span className='bg-gradient-to-r from-primaryBlue-primary to-primaryBlue-50 bg-clip-text text-transparent'>CydeOS</span></h1>
+        <div className='flex justify-center p-'><p>CydeOS is a fast Operating System Using Android 10/11 Designed For Old Phones. <a href="./compatibility">Check Compatibility Here</a> </p></div>
+      </div>
+      <div className='p-2'>
         <h1 className='text-3xl font-albertsans font-bold'>Features</h1>
-        <div className='flex'>
-     
-          <div>
-
+        <div className='flex justify-center'>
+          <div className='flex items-center flex-col  w-72 m-4 p-4 dark:bg-zinc-700 bg-zinc-400 shadow-md rounded-md'>
+            <ComputerDesktopIcon className='w-11' />
+            <FeatureCard title='Open' text='CydeOS Is Open-Source so that means Everybody, Including you can modify the code' />
+          </div>
+          <div className='flex items-center flex-col w-72 m-4 p-4 dark:bg-zinc-700 bg-zinc-400 shadow-md rounded-md'>
+            <CheckBadgeIcon className='w-11' />
+            <FeatureCard title='Fast' text='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut' />
+          </div>
+          <div className='flex items-center flex-col w-72 m-4 p-4 dark:bg-zinc-700 bg-zinc-400 shadow-md rounded-md'>
+          <DevicePhoneMobileIcon className='w-11'/>
+            <FeatureCard title='Compatible' text='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut' />
           </div>
         </div>
-        </div>
+      </div>
     </>
   )
 }
 
 function Compat() {
- return(
-  <>
-  
-  </>
- )  
+  return (
+    <>
+
+    </>
+  )
 }
 
 function NotFound() {
-  return(
+  return (
     <>
-    <h1>We Didnt find the page you were searching for!</h1>
+      <h1>We Didnt find the page you were searching for!</h1>
     </>
   )
 }
