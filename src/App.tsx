@@ -35,7 +35,7 @@ function Home() {
       <div className='p-2'>
         <h1 className='text-3xl font-bold font-albertsans'>Apps by Novagon</h1>
         <div className='flex'>
-          <p>This Part is still in development.</p>
+          <p>This Part is still in development. Come Back later.</p>
         </div>
       </div>
     </>
