@@ -7,16 +7,15 @@ function App() {
     <>
       <div className="App">
         <header className='h-[10vh] sticky top-0 dark:bg-zinc-900 bg-zinc-50 flex items-center justify-between px-8'>
-          <h1 className='text-xl font-bold font-albertsans'>CydeOS</h1>
-          <button data-tooltip-id='downloadbtnfail' data-tooltip-content='Cannot Download - Still in development' data-tooltip-place='bottom'>Download</button>
+          <img src="/public/nvglogo.png" alt="Novagon Logo" />
+          <button data-tooltip-id='downloadbtnfail' data-tooltip-content='This part is still in development!' data-tooltip-place='bottom'>Contact</button>
         </header>
       </div>
       <Tooltip
-         id='downloadbtnfail'/>
-               <BrowserRouter>
+        id='downloadbtnfail' />
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/compatibility" element={<Compat />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
@@ -24,40 +23,41 @@ function App() {
   );
 }
 
-function Home(){
+function Home() {
   // TODO: Make the "Features" cards seperate components in seperate files.
-  return(
+  return (
     <>
-        <div className='flex justify-center items-center p-4 m-2 dark:bg-zinc-600 bg-zinc-100 rounded-md h-80	flex-col space-y-6'>
-          <h1 className='text-3xl font-albertsans font-bold mx-2'>Lets Speed up your old phones. using <span>CydeOS</span></h1>
-          <div className='flex justify-center p-'><p>CydeOS is a fast Operating System Using Android 10/11 Designed For Old Phones. <a href="./compatibility">Check Compatibility Here</a> </p></div>
-        </div>
-        <div className='p-2'>
-        <h1 className='text-3xl font-albertsans font-bold'>Features</h1>
+      <div className='flex flex-col items-center justify-center p-4 m-2 space-y-6 rounded-md dark:bg-zinc-600 bg-zinc-100 h-80'>
+        <h1 className='mx-2 text-3xl font-albertsans'>Welcome to <span className="font-bold text-primaryBlue-primary">Novagon</span>.</h1>
+        <div className='flex justify-center p-'><p>Uniting CydeOS and Novagon Web.</p></div>
+      </div>
+      <div className='p-2'>
+        <h1 className='text-3xl font-bold font-albertsans'>Apps by Novagon</h1>
         <div className='flex'>
-     
-          <div>
-
-          </div>
+          <p>This Part is still in development.</p>
         </div>
-        </div>
+      </div>
     </>
   )
 }
 
 function Compat() {
- return(
-  <>
-  
-  </>
- )  
+  return (
+    <>
+
+    </>
+  )
 }
 
 function NotFound() {
-  return(
-    <>
-    <h1>We Didnt find the page you were searching for!</h1>
-    </>
+  return (
+    <div className='flex flex-col items-center justify-center h-screen'>
+      <div className="flex flex-col items-center justify-center p-5">
+        <h1 className='p-2'>404</h1>
+        <p className='p-2'>We Didnt find the page you were searching for!</p>
+        <a href="/">go back</a>
+      </div>
+    </div>
   )
 }
 
