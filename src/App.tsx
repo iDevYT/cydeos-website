@@ -2,6 +2,8 @@ import React from 'react';
 import { Tooltip } from "react-tooltip";
 import 'react-tooltip/dist/react-tooltip.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FeatureCard } from "./components/cards";
+import { ComputerDesktopIcon, CheckBadgeIcon, DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
 function App() {
   return (
     <>
@@ -24,7 +26,6 @@ function App() {
 }
 
 function Home() {
-  // TODO: Make the "Features" cards seperate components in seperate files.
   return (
     <>
       <div className='flex flex-col items-center justify-center p-4 m-2 space-y-6 rounded-md dark:bg-zinc-600 bg-zinc-100 h-80'>

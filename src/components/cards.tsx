@@ -15,5 +15,4 @@ function FeatureCard ({title, text}: CardProps) {
         </>
     )
 }
-
 export { FeatureCard }

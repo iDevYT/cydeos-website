@@ -1,3 +1,3 @@
-# CydeOS Website
+# Project Novagon Website
 
-this is the CydeOS Website.
+this is the Project Novagon Website.
