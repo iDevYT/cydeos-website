@@ -41,7 +41,11 @@ jobs:
         
       - name: Find all items
         run: find .
-      
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
