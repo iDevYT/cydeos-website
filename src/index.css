@@ -2,55 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply h-screen bg-white dark:bg-zinc-800 dark:text-white font-poppins;
+}
+
+h1, h2, h3, button {
+  @apply font-albertsans font-bold
+}
+
+.link {
+  @apply hover:text-violet-500 transition-all
+}
 .message {
   @apply flex items-center space-x-2 ;
 }
 
 .sent p {
-  @apply p-1 px-2 rounded-full bg-primaryBlue-primary dark:bg-gray-secondary justify-self-end;
+  @apply p-1 px-2 break-all rounded-md bg-violet-500 dark:bg-secGray-secondary justify-self-end;
 }
 
 .received p {
-  @apply p-1 px-2 bg-white rounded-full dark:bg-zinc-900;
+  @apply p-1 px-2 break-all bg-white rounded-md dark:bg-zinc-900;
 }
 
-.MessageSender {
-  @apply h-[10vh] sticky bottom-0 py-1 w-screen flex text-xs justify-center;
+.button-secondary {
+  @apply px-4 py-2 text-sm font-bold rounded-full dark:bg-secGray-secondary text-violet-500 bg-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-700 font-albertsans
 }
 
-a {
-  @apply hover:text-primaryBlue-primary transition-all
+.button-primary {
+  @apply px-4 py-2 text-sm font-bold rounded-full bg-violet-500 text-white hover:text-zinc-50 hover:bg-violet-600 font-albertsans
 }
 
-body {
-  @apply h-screen bg-zinc-300 dark:bg-zinc-800 dark:text-white;
+
+.input-search {
+  @apply w-96 p-2 border-2 dark:border-zinc-500 border-zinc-700 rounded-md focus:outline-violet-500 dark:bg-zinc-900
 }
 
-main {
-  @apply w-screen h-[80vh] overflow-y-scroll;
-}
-main::-webkit-scrollbar {
-  @apply w-4
-}
-
-main::-webkit-scrollbar-track {
-  @apply bg-zinc-50 dark:bg-zinc-900;
-}
-
-main::-webkit-scrollbar-thumb {
-  @apply m-1 rounded-full bg-primaryBlue-primary;
-}
-
-button {
-  @apply dark:bg-zinc-700 bg-primaryBlue-primary text-white font-albertsans hover:bg-primaryBlue-50 dark:hover:bg-zinc-600 m-1 rounded-md p-3 transition-all duration-200
-}
-
-.sign-out {
-  @apply p-3 rounded-md
-}
-h1 {
-  @apply text-3xl font-albertsans font-bold
-}
-h2 {
-  @apply text-2xl font-albertsans font-bold mx-2
+.sign-in-btn {
+  @apply inline-flex justify-center items-center gap-2 w-64
 }

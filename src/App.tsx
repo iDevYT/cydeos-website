@@ -29,8 +29,8 @@ function Home() {
   return (
     <>
       <div className='flex flex-col items-center justify-center p-4 m-2 space-y-6 rounded-md dark:bg-zinc-600 bg-zinc-100 h-80'>
-        <h1 className='mx-2 text-3xl font-albertsans'>Welcome to <span className="font-bold text-primaryBlue-primary">Novagon</span>.</h1>
-        <div className='flex justify-center p-2'>Everything is better when its open</div>
+        <h1 className='mx-2 text-3xl font-albertsans'>Welcome to <span className="font-bold text-violet-500">Novagon</span>.</h1>
+        <q className='flex justify-center p-2 before:content-[">"] font-'>It's is better when its open</q>
       </div>
       <div className='p-2'>
         <h1 className='text-3xl font-bold font-albertsans'>Apps by Novagon</h1>
