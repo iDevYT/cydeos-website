@@ -1,4 +1,4 @@
-# Project Novagon Website
+# novagon.io
 
 this is the Project Novagon Website.
 *made by david*
