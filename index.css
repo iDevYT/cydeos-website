@@ -7,6 +7,7 @@ html {
     text-decoration: none;
     color: var(--ctp-mocha-text);
     background-color: var(--ctp-mocha-base);
+    height: 100vh;
 }
 
 code {
@@ -29,11 +30,8 @@ code {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    height: 1px;
 }
 
 /* Adaptiveness */
