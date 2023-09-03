@@ -34,6 +34,17 @@ code {
     margin-right: auto;
 }
 
+.hero{
+    background-color: var(--ctp-mocha-mantle);
+    height: 10rem;
+    margin: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    flex-direction: column;
+}
+
 /* Adaptiveness */
 
 @media (prefers-color-scheme: light) {
